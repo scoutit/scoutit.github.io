@@ -187,8 +187,8 @@
 						</header>
 						<div class="content">
 							<p><strong>If you would</strong> like to contact me, please fill the below fields and click "Send"; and I will contact you as soon as possible.</p>
-							<form action="https://formspree.io/erniedl.00@gmail.com" method="POST" >
-                                                                <div class="fields">
+							<form name="contactmeform" onsubmit="return checkForm(this);" action="https://formspree.io/erniedl.00@gmail.com" method="POST" >
+                                                            <div class="fields">
 									<div class="field half">
 										<input type="text" name="name" id="name" placeholder="Name" />
 									</div>
@@ -200,7 +200,7 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send" class="button primary" /></li>
+									<li><input name="contactmesend" type="submit" value="Send" class="button primary" /></li>
 								</ul>
 							</form>
 						</div>

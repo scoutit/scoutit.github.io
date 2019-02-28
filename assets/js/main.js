@@ -206,3 +206,9 @@
 					});
 
 })(jQuery);
+
+function checkForm(form) {
+    form.contactmesend.value = "Thank You!";
+    form.contactmesend.disabled = true;
+    return false;
+};
