@@ -56,7 +56,7 @@
 	$svg: str-replace($svg, '#', '%23');
 	$svg: str-replace($svg, '{', '%7B');
 	$svg: str-replace($svg, '}', '%7D');
-	$svg: str-replace($svg, ';', '%3B');
+	$svg: str-replace($svg, '\;', '%3B');
 
 	@return url("data:image/svg+xml;charset=utf8,#{$svg}");
 
