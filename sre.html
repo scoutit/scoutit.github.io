@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SRE Presentation — Ernie DeLuna</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+      <section class="intro">
+        <header>
+          <h1>Site Reliability Engineer (SRE)</h1>
+          <p>Quick talking points and a 15-minute presentation outline.</p>
+        </header>
+        <div class="content">
+          <h2>Definition</h2>
+          <p>
+            <strong>SRE:</strong> Responsible for maintaining the
+            <strong>RELIABILITY</strong>, <strong>SCALABILITY</strong>, and
+            <strong>PERFORMANCE</strong> of production systems. Combines
+            software engineering with operational expertise to automate tasks,
+            reduce manual work (toil), improve system
+            <strong>OBSERVABILITY</strong>, and ensure high system
+            <strong>AVAILABILITY</strong>.
+          </p>
+
+          <h2>15-minute Speaking Plan</h2>
+          <ol>
+            <li>
+              <strong>Intro — 1 min</strong>: Brief definition (above) and your
+              role transition into SRE.
+            </li>
+            <li>
+              <strong>FSA / Prod incident response — 5 min</strong>: Expand on
+              incident load (assigned thousands of tickets), outage notices,
+              tiger teams, writing RCAs, communicating to stakeholders, and
+              participating in post-incident reviews/murder boards. Give 1 short
+              anecdote (30–45s) about a high-severity outage you helped resolve
+              and what you automated afterward.
+            </li>
+            <li>
+              <strong>DevOps pipeline work — 3 min</strong>: Describe CI/CD,
+              test automation, rollout strategies, and any tooling you helped
+              maintain or improve. Mention how pipelines reduced deployment toil
+              and increased reliability.
+            </li>
+            <li>
+              <strong
+                >Auth & integrations (eBOSS / Okta / 2FA / favicon) — 2
+                min</strong
+              >: Talk about identity integrations (Okta, 2FA), eBOSS
+              adjustments, and small but important production fixes like
+              favicon/branding that improve user experience and reduce support
+              noise.
+            </li>
+            <li>
+              <strong>SVD script work — 1.5 min</strong>: Explain the scripts
+              you wrote to automate data collection, health checks, or scheduled
+              maintenance and how they cut manual effort.
+            </li>
+            <li>
+              <strong>BitBucket / Java upgrades & bug fixes — 1.5 min</strong>:
+              Mention upgrading Java, emulating user features for testing, and
+              fixing bugs in source control workflow; emphasize safe rollout and
+              testing strategies.
+            </li>
+            <li>
+              <strong>Confluence & documentation — 1 min</strong>: Highlight
+              writing runbooks, playbooks, and post-incident summaries that made
+              on-call onboarding and incident response faster.
+            </li>
+            <li>
+              <strong>Wrap-up & Q/A — 0.5 min</strong>: Recap biggest impacts
+              (automation, observability, uptime improvements) and invite
+              questions.
+            </li>
+          </ol>
+
+          <h2>Talking Points (expanded bullets)</h2>
+          <ul>
+            <li>
+              <strong>FSA / Incident Response:</strong> Triage process, incident
+              severity levels, stakeholder comms cadence, RCA structure,
+              corrective actions, preventative tasks automated.
+            </li>
+            <li>
+              <strong>DevOps Pipeline:</strong> CI tools, deployment gates,
+              canary/blue-green strategies, rollbacks, pipeline metrics (deploy
+              frequency, lead time).
+            </li>
+            <li>
+              <strong>Auth & Integrations:</strong> Okta SSO integration, 2FA
+              flows, and configuration management; small fixes to reduce user
+              friction.
+            </li>
+            <li>
+              <strong>SVD Scripts:</strong> Examples: daily health reports, log
+              rotation checks, automated restart/cleanup scripts, scheduled
+              snapshotting.
+            </li>
+            <li>
+              <strong>BitBucket / Java:</strong> Coordinating upgrades,
+              compatibility testing, emulating user flows for QA, and triaging
+              regression bugs.
+            </li>
+            <li>
+              <strong>Confluence:</strong> Runbooks, escalation paths,
+              postmortem templates, and documentation ownership.
+            </li>
+          </ul>
+
+          <h2>Key Phrases & Metrics to Mention</h2>
+          <ul>
+            <li>Mean Time To Detect (MTTD)</li>
+            <li>Mean Time To Restore (MTTR) — how automation lowered MTTR</li>
+            <li>Reduction in manual toil (hours/week)</li>
+            <li>Improved observability (dashboards, alerts tuned)</li>
+            <li>Deployment frequency and successful deploy rate</li>
+          </ul>
+
+          <p style="margin-top: 1.5em">
+            <a href="index.html" class="button large">Back to Home</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="copyright">
+        Ernie's Portfolio. Design:
+        <a href="https://html5up.net">@ALJKN/HTML5 UP</a>.
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
